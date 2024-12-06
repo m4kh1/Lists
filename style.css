@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+li > h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul > li::marker{
+    content: "🛒 ";
+}
+
+ul > li > ul > li::marker{
+    content: "🍎 ";
+}
+
+#b > li::marker{
+    content: "🍞 ";
+}
+
+#d > li::marker{
+    content: "🥛 ";
+}
+
+nav > li > ul > li::marker{
+    content: "";
+}
+nav > li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav > li > ul{
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    top: 8px;
+    left: 0px;
+    padding: 6px;
+    display:none;
+}
+
+#a:hover > ul{
+    display: block;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    
+}
